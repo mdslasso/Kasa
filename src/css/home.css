@@ -1,0 +1,138 @@
+.home {}
+
+.welcome {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.welcome h1 {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: white;
+
+
+}
+
+
+
+.logements {
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+
+
+}
+
+
+.logements article {
+    width: 30%;
+    height: 280px;
+    border-radius: 10px;
+
+}
+
+.logements article:hover {
+    cursor: pointer;
+
+}
+
+
+.logements article img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.logements article span {
+    display: block;
+    color: white;
+    margin-top: -30px;
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .welcome {
+        height: 110px;
+        background-position: center;
+        font-weight: bold;
+
+
+
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+        text-align: left;
+        margin-left: 10px;
+
+
+    }
+
+
+    .logements {
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+
+
+    }
+
+
+    .logements article {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+
+
+    }
+
+
+    .logements article img {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+
+    }
+
+    .logements article span {
+
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+}

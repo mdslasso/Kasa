@@ -1,14 +1,28 @@
-import Slider from '../components/Slider';
+import image from '../assets/img1.png'
+import LogementList from '../components/LogementList';
+
+
 function Home() {
 
     return (
 
         <div className="home">
 
-            <Slider />
+            <div className="welcome" style={{ backgroundImage: `url(${image})` }}>
+
+                <h1>Chez vous, partout et ailleurs</h1>
+
+            </div>
+            <div className="logements">
+
+                <LogementList />
 
 
 
+
+
+
+            </div>
 
         </div>
     )

@@ -1,4 +1,4 @@
-import Img1 from '../assets/img1.png'
+import Img2 from '../assets/img2.png'
 
 function Slider() {
 
@@ -8,7 +8,7 @@ function Slider() {
 
         <div className="slider">
 
-            <img src={Img1} alt='logo' />
+            <img src={Img2} alt='logo' />
 
 
 

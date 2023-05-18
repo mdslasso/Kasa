@@ -1,5 +1,10 @@
 @import "./header.css";
+@import "./home.css";
+@import "./apropos.css";
 @import "./slider.css";
+@import "./footer.css";
+@import "./error.css";
+@import "./localisation.css";
 
 .app {
   width: 90%;

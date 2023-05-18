@@ -1,0 +1,57 @@
+.error {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+
+.error div span {
+    font-size: 200px;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-weight: 700;
+
+
+}
+
+.error a {
+    color: #FF6060;
+    font-size: 14px;
+    margin-top: 80px;
+
+}
+
+
+
+
+.error p {
+    font-size: 20px;
+    color: #FF6060;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .error div span {
+        font-size: 60px;
+
+    }
+
+
+    .error p {
+        font-size: 15px;
+        color: #FF6060;
+    }
+
+    .error a {
+
+        margin-top: 50px;
+    }
+
+
+}

@@ -11,6 +11,12 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
+
+
+}
+
+ul a {
+    text-decoration: none;
     color: #FF6060;
 
 }
@@ -19,5 +25,28 @@ ul {
     width: 100px;
     height: 30px;
     margin-top: 10px;
+
+}
+
+.activeLink {
+    border-bottom: 1px solid #FF6060;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    ul {
+
+        text-transform: uppercase;
+        font-size: 10px
+    }
+
+    .logo {
+
+        margin-top: 0px;
+
+    }
+
+
 
 }
