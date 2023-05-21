@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+
 import datas from '../datas/datas.json'
+import { Link } from 'react-router-dom';
 
 function LogementList() {
 
@@ -7,13 +8,19 @@ function LogementList() {
 
         <div className="logements">
 
-            {datas.map((data, index) => (
+            {datas.map((data) => (
 
 
-                <article key={index}>
+                <article key={data.id}>
 
-                    <img src={data.cover} alt={data.title} />
-                    <span>{data.title}</span>
+                    <Link to={`/logements/${data.id}`}>
+
+                        <img src={data.cover} alt={data.title} />
+                        <span>{data.title}</span>
+
+                    </Link>
+
+
 
                 </article>
 

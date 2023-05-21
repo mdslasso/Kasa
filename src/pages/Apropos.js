@@ -1,10 +1,14 @@
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import image from '../assets/img3.png'
 
 
 function Apropos() {
-    const [show, setShow] = useState(false)
+    const [showFiabilite, setShowFiabilite] = useState(false)
+    const [showRespect, setShowRespect] = useState(false)
+    const [showService, setShowService] = useState(false)
+    const [showSecurite, setShowSecurite] = useState(false)
+
 
     return (
 
@@ -20,15 +24,14 @@ function Apropos() {
 
                     <div className="titreApropos">  <span> Fiabilité</span>
 
-                        {show ? <button onClick={() => setShow(false)}> <i class="fa-solid fa-chevron-up"></i></button> : <button onClick={() => setShow(true)}> <i class="fa-solid fa-chevron-down"></i> </button>}
-
+                        <button onClick={() => setShowFiabilite(!showFiabilite)}>  {showFiabilite ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button>
                     </div>
 
                     {
 
-                        show ?
+                        showFiabilite ?
 
-                            <div className="contenuFiabilite">
+                            <div className="contenuApropos">
 
                                 Les annonces postées sur Kasa garantissent une fiabilité totale.
 
@@ -45,12 +48,12 @@ function Apropos() {
 
                 <div className="menuApropos">
 
-                    <div className="titreApropos">  <span> Respect</span>  {show ? <button onClick={() => setShow(false)}> <i class="fa-solid fa-chevron-up"></i></button> : <button onClick={() => setShow(true)}> <i class="fa-solid fa-chevron-down"></i> </button>}</div>
+                    <div className="titreApropos">  <span> Respect</span>   <button onClick={() => setShowRespect(!showRespect)}>  {showRespect ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button></div>
 
 
-                    {show ?
+                    {showRespect ?
 
-                        <div className="contenuRespect">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme..</div>
+                        <div className="contenuApropos">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme..</div>
 
                         : null
 
@@ -61,14 +64,14 @@ function Apropos() {
 
                 <div className="menuApropos">
 
-                    <div className="titreApropos">  <span> Service</span>    {show ? <button onClick={() => setShow(false)}> <i class="fa-solid fa-chevron-up"></i></button> : <button onClick={() => setShow(true)}> <i class="fa-solid fa-chevron-down"></i> </button>}  </div>
+                    <div className="titreApropos">  <span> Service</span>    <button onClick={() => setShowService(!showService)}>  {showService ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button></div>
 
 
                     {
 
-                        show ?
+                        showService ?
 
-                            <div className="contenuService">
+                            <div className="contenuApropos">
 
                                 Nos équipes se tiennent à votre disposition pour vous
                                 fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</div>
@@ -82,14 +85,14 @@ function Apropos() {
 
                 <div className="menuApropos">
 
-                    <div className="titreApropos">  <span> Sécurité</span>    {show ? <button onClick={() => setShow(false)}> <i class="fa-solid fa-chevron-up"></i></button> : <button onClick={() => setShow(true)}> <i class="fa-solid fa-chevron-down"></i> </button>}</div>
+                    <div className="titreApropos">  <span> Sécurité</span>     <button onClick={() => setShowSecurite(!showSecurite)}>  {showSecurite ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button></div>
 
 
                     {
 
-                        show ?
+                        showSecurite ?
 
-                            <div className="contenuSecurite">
+                            <div className="contenuApropos">
                                 La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque
                                 logement correspond aux critères de sécurité établis par nos services. En laissant une note
                                 aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
