@@ -1,9 +1,13 @@
 
 import { useState } from 'react'
 import image from '../assets/img3.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
 
 
 function Apropos() {
+
     const [showFiabilite, setShowFiabilite] = useState(false)
     const [showRespect, setShowRespect] = useState(false)
     const [showService, setShowService] = useState(false)
@@ -24,7 +28,7 @@ function Apropos() {
 
                     <div className="titreApropos">  <span> Fiabilité</span>
 
-                        <button onClick={() => setShowFiabilite(!showFiabilite)}>  {showFiabilite ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button>
+                        <button className='btn-apropos' onClick={() => setShowFiabilite(!showFiabilite)}>  {showFiabilite ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}</button>
                     </div>
 
                     {
@@ -48,7 +52,7 @@ function Apropos() {
 
                 <div className="menuApropos">
 
-                    <div className="titreApropos">  <span> Respect</span>   <button onClick={() => setShowRespect(!showRespect)}>  {showRespect ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button></div>
+                    <div className="titreApropos">  <span> Respect</span>   <button className='btn-apropos' onClick={() => setShowRespect(!showRespect)}>  {showRespect ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}</button></div>
 
 
                     {showRespect ?
@@ -64,7 +68,7 @@ function Apropos() {
 
                 <div className="menuApropos">
 
-                    <div className="titreApropos">  <span> Service</span>    <button onClick={() => setShowService(!showService)}>  {showService ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button></div>
+                    <div className="titreApropos">  <span> Service</span>    <button className='btn-apropos' onClick={() => setShowService(!showService)}>  {showService ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}</button></div>
 
 
                     {
@@ -85,7 +89,9 @@ function Apropos() {
 
                 <div className="menuApropos">
 
-                    <div className="titreApropos">  <span> Sécurité</span>     <button onClick={() => setShowSecurite(!showSecurite)}>  {showSecurite ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</button></div>
+                    <div className="titreApropos">  <span> Sécurité</span>     <button className='btn-apropos' onClick={() => setShowSecurite(!showSecurite)}>  {showSecurite ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />
+
+                    }</button></div>
 
 
                     {

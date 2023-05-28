@@ -1,13 +1,88 @@
-.slider {}
-
-.slider img {
+.container-slider {
     width: 100%;
+    height: 350px;
+    margin: auto;
+    position: relative;
 
+
+}
+
+.slide {
+    width: 100%;
+    margin: auto;
+    height: 350px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity ease-in-out 0.5s;
 
 }
 
 
 
+
+.btnSlider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+    color: white;
+    position: absolute;
+
+}
+
+
+.btn-slide {
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: white;
+
+
+}
+
+
+.nbreSlide {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    opacity: 1;
+    color: whitesmoke;
+
+}
+
+
+
+
 /* -------------------------------- Medias Queries Smartphone --------------------------------*/
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+    .container-slider {
+        height: 300px;
+
+
+    }
+
+    .slide {
+        height: 300px;
+
+
+    }
+
+
+    .btnSlider {
+
+        margin-top: 120px;
+
+    }
+
+
+
+
+
+
+}

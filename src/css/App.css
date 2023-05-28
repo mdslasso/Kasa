@@ -1,13 +1,15 @@
 @import "./header.css";
 @import "./home.css";
 @import "./apropos.css";
-@import "./slider.css";
 @import "./footer.css";
 @import "./error.css";
-@import "./localisation.css";
+@import "./detailLogement.css";
+@import "./slider.css";
 
 .app {
   width: 90%;
   margin: auto;
+  height: 100vh;
+
 
 }

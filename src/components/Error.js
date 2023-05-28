@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
 
+
+
 function Error() {
+
+
+
+
     return (
         <div className="error">
 

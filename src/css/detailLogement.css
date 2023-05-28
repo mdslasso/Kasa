@@ -1,3 +1,6 @@
+.DetailLogement {}
+
+
 .localisation {
 
     display: flex;
@@ -33,20 +36,23 @@
 }
 
 
-.adresse {
+.tag {
     display: flex;
     flex-direction: row;
     gap: 5px;
 
 }
 
-.adresse span {
-    width: 80px;
+.tag span {
     background-color: #FF6060;
     border-radius: 5px;
     text-align: center;
     color: white;
-    font-size: 12px;
+    font-size: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 
 }
 
@@ -81,10 +87,17 @@
 }
 
 .user div {
-    width: 50px;
+    width: 40px;
     height: 40px;
     border-radius: 100px;
-    background-color: #C4C4C4;
+
+}
+
+.user div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+
 }
 
 
@@ -98,12 +111,87 @@
 
 }
 
-.last {
+.emptyFavoris {
     color: #E3E3E3;
 
 
 
 }
+
+
+.cadreInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+}
+
+
+
+.cadreInfos .cadreDescription,
+.cadreEquipement {
+    width: 45%;
+    border-radius: 5px;
+
+
+}
+
+.description,
+.equipement {
+
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    padding: 20px;
+    color: #FF6060;
+    line-height: 20px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.equipement {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.titreDescription,
+.titreEquipement {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+
+}
+
+.cadreInfos button {
+
+
+    background-color: #FF6060;
+    color: white;
+    border: none;
+
+
+
+}
+
+
+
+
+
 
 
 /* -------------------------------- Medias Queries Smartphone --------------------------------*/
@@ -182,6 +270,53 @@
     }
 
 
+
+    .cadreInfos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        gap: 20px;
+
+
+    }
+
+
+
+    .cadreInfos .cadreDescription,
+    .cadreEquipement {
+        width: 100%;
+        border-radius: 5px;
+
+
+    }
+
+
+    .description,
+    .equipement {
+
+        background-color: #F7F7F7;
+        border-radius: 5px;
+        padding: 20px;
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+    }
+
+
+    .titreDescription,
+    .titreEquipement {
+
+        font-size: 12px;
+
+
+    }
 
 
 

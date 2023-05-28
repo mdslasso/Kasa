@@ -13,21 +13,23 @@
 .cadreMenuApropos {
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
 
-.cadreMenuApropos button {
+.btn-apropos {
     border: none;
     color: white;
     background-color: #FF6060;
 
+
 }
 
-.cadreMenuApropos button:hover {
+
+.btn-apropos button:hover {
     cursor: pointer;
 
 }
@@ -72,16 +74,40 @@
 
 
 
+
+
 @media screen and (max-width: 767px) {
 
     .baniereApropos {
-        height: 300px;
+        height: 200px;
 
 
 
 
 
     }
+
+    .titreApropos {
+        width: 95%;
+        margin: auto;
+
+
+    }
+
+    .contenuApropos {
+
+        width: 95%;
+        margin: auto;
+        font-size: 13px;
+
+    }
+
+
+    .cadreMenuApropos {
+        width: 100%;
+
+    }
+
 
 
 

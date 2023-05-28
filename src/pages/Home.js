@@ -18,10 +18,6 @@ function Home() {
                 <LogementList />
 
 
-
-
-
-
             </div>
 
         </div>
