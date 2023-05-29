@@ -1,4 +1,4 @@
-import image from '../assets/img1.png'
+import image from '../assets/baniere-home.png'
 import LogementList from '../components/LogementList';
 
 

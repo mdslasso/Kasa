@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import image from '../assets/img3.png'
+import image from '../assets/baniere-apropos.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -38,7 +38,6 @@ function Apropos() {
                             <div className="contenuApropos">
 
                                 Les annonces postées sur Kasa garantissent une fiabilité totale.
-
                                 Les photos sont conformes aux logements, et toutes les
                                 informations sont régulièrement vérifiées  par nos équipes.
 
@@ -57,7 +56,9 @@ function Apropos() {
 
                     {showRespect ?
 
-                        <div className="contenuApropos">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme..</div>
+                        <div className="contenuApropos">La bienveillance fait partie des valeurs fondatrices de Kasa.
+                            Tout comportement discriminatoire ou de perturbation du voisinage
+                            entraînera une exclusion de notre plateforme..</div>
 
                         : null
 
