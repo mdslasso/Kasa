@@ -15,8 +15,7 @@ function Slider() {
     const logement = logements.find((logement) => logement.id === logementId)
     const { pictures } = logement
     const [currentIndex, setCurrentIndex] = useState(0)
-
-    const [showButton] = useState(true)
+    const [hideElement] = useState(true)
 
 
 
@@ -47,7 +46,7 @@ function Slider() {
 
             <div className="btnSlider">
                 {
-                    pictures.length === 1 ? showButton :
+                    pictures.length === 1 ? hideElement :
                         <button className='btn-slide' onClick={prevSlide}>
                             <FontAwesomeIcon icon={faAngleLeft} />
                         </button>
@@ -56,7 +55,7 @@ function Slider() {
 
 
                 {
-                    pictures.length === 1 ? showButton :
+                    pictures.length === 1 ? hideElement :
 
                         <button className='btn-slide' onClick={nextSlide}>
 
@@ -68,7 +67,7 @@ function Slider() {
 
 
                 {
-                    pictures.length === 1 ? showButton :
+                    pictures.length === 1 ? hideElement :
                         <div className='nbreSlide'><span>{currentIndex + 1}/{pictures.length}</span></div>
                 }
 
