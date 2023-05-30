@@ -16,17 +16,24 @@ function Slider() {
     const { pictures } = logement
     const [currentIndex, setCurrentIndex] = useState(0)
 
+    const [showButton] = useState(true)
+
+
+
+
+
+
+
 
     const prevSlide = () => {
-        const firstSlide = currentIndex === 0
-        const newIndex = firstSlide ? pictures.length - 1 : currentIndex - 1
-        setCurrentIndex(newIndex)
+
+        setCurrentIndex(currentIndex === 0 ? pictures.length - 1 : currentIndex - 1)
     }
 
     const nextSlide = () => {
-        const lastSlide = currentIndex === pictures.length - 1
-        const newIndex = lastSlide ? 0 : currentIndex + 1
-        setCurrentIndex(newIndex)
+
+        setCurrentIndex(currentIndex === pictures.length - 1 ? 0 : currentIndex + 1)
+
     }
 
     return (
@@ -35,23 +42,36 @@ function Slider() {
             <div className="slide" style={{ backgroundImage: `url(${pictures[currentIndex]})` }} >
             </div>
 
+
+
+
             <div className="btnSlider">
+                {
+                    pictures.length === 1 ? showButton :
+                        <button className='btn-slide' onClick={prevSlide}>
+                            <FontAwesomeIcon icon={faAngleLeft} />
+                        </button>
+
+                }
 
 
+                {
+                    pictures.length === 1 ? showButton :
 
-                <button className='btn-slide' onClick={prevSlide}>
-                    <FontAwesomeIcon icon={faAngleLeft} />
-                </button>
+                        <button className='btn-slide' onClick={nextSlide}>
+
+                            <FontAwesomeIcon icon={faAngleRight} />
+
+                        </button>
+
+                }
 
 
+                {
+                    pictures.length === 1 ? showButton :
+                        <div className='nbreSlide'><span>{currentIndex + 1}/{pictures.length}</span></div>
+                }
 
-                <button className='btn-slide' onClick={nextSlide}>
-                    <FontAwesomeIcon icon={faAngleRight} />
-
-                </button>
-
-
-                <div className='nbreSlide'><span>{currentIndex + 1}/{pictures.length}</span></div>
             </div>
 
         </div >
