@@ -33,6 +33,8 @@ function Apropos() {
 
                     {
 
+                        // Afficher contenu fiabilite 
+
                         showFiabilite ?
 
                             <div className="contenuApropos">
@@ -54,13 +56,17 @@ function Apropos() {
                     <div className="titreApropos">  <span> Respect</span>   <button className='btn-apropos' onClick={() => setShowRespect(!showRespect)}>  {showRespect ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}</button></div>
 
 
-                    {showRespect ?
 
-                        <div className="contenuApropos">La bienveillance fait partie des valeurs fondatrices de Kasa.
-                            Tout comportement discriminatoire ou de perturbation du voisinage
-                            entraînera une exclusion de notre plateforme..</div>
+                    {
+                        // Afficher contenu respect 
 
-                        : null
+                        showRespect ?
+
+                            <div className="contenuApropos">La bienveillance fait partie des valeurs fondatrices de Kasa.
+                                Tout comportement discriminatoire ou de perturbation du voisinage
+                                entraînera une exclusion de notre plateforme..</div>
+
+                            : null
 
                     }
 
@@ -73,6 +79,8 @@ function Apropos() {
 
 
                     {
+
+                        // Afficher contenu service  
 
                         showService ?
 
@@ -97,6 +105,7 @@ function Apropos() {
 
                     {
 
+                        // Afficher contenu securite
                         showSecurite ?
 
                             <div className="contenuApropos">

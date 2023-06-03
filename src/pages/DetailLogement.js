@@ -10,12 +10,13 @@ function DetailLogement() {
     const { logementId } = useParams()
     const logement = logements.find((logement) => logement.id === logementId)
 
-    //const { title, description, location, tags, host, equipments, rating } = logement
+
 
     const [showDescription, setShowDescription] = useState(false)
     const [showEquipement, setShowEquipement] = useState(false)
 
 
+    // Afficher la page d'erreur si l'id du logement n'existe pas 
     let navigate = useNavigate();
     useEffect(() => {
         if (logement === undefined) { navigate("404", { replace: true }) }
@@ -25,7 +26,9 @@ function DetailLogement() {
         return null;
     }
 
+    // avis  fond jaune 
     const fullFavoris = Array(parseFloat(logement.rating)).fill(<FontAwesomeIcon icon={faStar} />)
+    // avis fond fond blanc 
     const emptyFavoris = Array(parseFloat(5 - logement.rating)).fill(<FontAwesomeIcon icon={faStar} />)
 
 
@@ -46,6 +49,9 @@ function DetailLogement() {
                         <span>{logement.location}</span>
                     </div>
 
+
+
+
                     <div className="tag">
 
                         {logement.tags.map((tag, index) => (
@@ -59,6 +65,9 @@ function DetailLogement() {
 
 
                 </div>
+
+
+
 
                 <div className="cadreUser">
 
@@ -106,6 +115,7 @@ function DetailLogement() {
 
                     {
 
+                        // Afficher contenu description 
                         showDescription ?
 
                             <div className="description">
@@ -130,6 +140,7 @@ function DetailLogement() {
 
                     {
 
+                        // Afficher contenu equipement 
                         showEquipement ?
 
                             <div className="equipement">
@@ -141,16 +152,9 @@ function DetailLogement() {
 
                                 ))}
 
-
-
-
-
                             </div> : null
 
                     }
-
-
-
 
 
                 </div>

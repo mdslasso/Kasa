@@ -19,16 +19,14 @@ function Slider() {
 
 
 
-
-
-
-
-
+    // Action permettant d'afficher l'image precedende du slidershow
     const prevSlide = () => {
 
         setCurrentIndex(currentIndex === 0 ? pictures.length - 1 : currentIndex - 1)
     }
 
+
+    //  Action permettant d'afficher l'image suivante du slidershow
     const nextSlide = () => {
 
         setCurrentIndex(currentIndex === pictures.length - 1 ? 0 : currentIndex + 1)
@@ -45,7 +43,9 @@ function Slider() {
 
 
             <div className="btnSlider">
+
                 {
+                    //  Action permettant de cacher la  flèche precedendente si l'image est egale a une .
                     pictures.length === 1 ? hideElement :
                         <button className='btn-slide' onClick={prevSlide}>
                             <FontAwesomeIcon icon={faAngleLeft} />
@@ -55,6 +55,7 @@ function Slider() {
 
 
                 {
+                    //  Action permettant de cacher la  flèche suivante si l'image est egale a une.
                     pictures.length === 1 ? hideElement :
 
                         <button className='btn-slide' onClick={nextSlide}>
@@ -66,7 +67,7 @@ function Slider() {
                 }
 
 
-                {
+                {   //  Action permettant de cacher la numérotation si l'image est egale a une.
                     pictures.length === 1 ? hideElement :
                         <div className='nbreSlide'><span>{currentIndex + 1}/{pictures.length}</span></div>
                 }
