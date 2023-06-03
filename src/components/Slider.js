@@ -55,7 +55,7 @@ function Slider() {
 
 
                 {
-                    //  Action permettant de cacher la  flèche suivante si l'image est egale a une.
+                    //  Action permettant de cacher la  flèche suivante si l'image est egale a une
                     pictures.length === 1 ? hideElement :
 
                         <button className='btn-slide' onClick={nextSlide}>
