@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.4673753e.css",
+    "main.js": "/kasa/static/js/main.c07524f6.js",
+    "static/js/787.0ce615c0.chunk.js": "/kasa/static/js/787.0ce615c0.chunk.js",
+    "static/media/baniere-apropos.png": "/kasa/static/media/baniere-apropos.36c179482714a6165cd5.png",
+    "static/media/baniere-home.png": "/kasa/static/media/baniere-home.3dfce5193d0d83f21a5b.png",
+    "static/media/logo.png": "/kasa/static/media/logo.ee0690a8535d6571f0e6.png",
+    "static/media/logo-footer.png": "/kasa/static/media/logo-footer.d453c2090747c9885c25.png",
+    "index.html": "/kasa/index.html",
+    "main.4673753e.css.map": "/kasa/static/css/main.4673753e.css.map",
+    "main.c07524f6.js.map": "/kasa/static/js/main.c07524f6.js.map",
+    "787.0ce615c0.chunk.js.map": "/kasa/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4673753e.css",
+    "static/js/main.c07524f6.js"
+  ]
+}
