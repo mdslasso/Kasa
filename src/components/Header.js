@@ -9,10 +9,10 @@ function Header() {
 
         <div className="header">
 
-            <Link to="/"><img className='logo' src={Logo} alt='logo' /></Link>
+            <Link to="/kasa"><img className='logo' src={Logo} alt='logo' /></Link>
 
             <ul>
-                <li> <NavLink to="/" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>Accueil</NavLink></li>
+                <li> <NavLink to="/kasa" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>Accueil</NavLink></li>
                 <li>  <NavLink to="/apropos" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>A propos</NavLink></li>
 
             </ul>
